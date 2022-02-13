@@ -1,13 +1,15 @@
 @import "abstracts/vars";
+@import "abstracts/animations";
+@import "abstracts/mixins";
 
 @import "base/reset";
 @import "base/typography";
-
 @import "components/buttons";
 
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/header";
+@import "layout/card.scss";
 
 @import "pages/landing";
 @import "pages/home";

@@ -1,0 +1,73 @@
+.main {
+  background-color: $color-black-1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/landing/bg-landing.png);
+  background-size: cover;
+  background-position: bottom;
+  flex-direction: column;
+  .heading-box {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../images/landing/MB.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.flow {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: $color-black-1;
+  &__img {
+    text-align: center;
+    img {
+      width: 90%;
+    }
+  }
+  &__text-heading {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    &-img {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.521),
+      rgba(0, 0, 0, 0.233)
+    ),
+    url(../images/landing/Listen-landing.png);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+.find-music {
+  width: 100%;
+  background-color: $color-black-1;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+}
+.premium {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-black-1;
+  justify-content: center;
+  align-items: center;
+}

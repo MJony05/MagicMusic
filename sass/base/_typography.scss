@@ -1,0 +1,43 @@
+.main__heading {
+  font-size: 5rem;
+  color: $color-white;
+
+  animation-name: fromleft;
+  animation-duration: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  &-1 {
+    animation-delay: 0.2s;
+  }
+  &-2 {
+    animation-delay: 0.5s;
+  }
+}
+.main_cost {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: $color-white;
+}
+.blue-text {
+  color: $color-tertiary;
+  margin-left: 0.4rem;
+}
+.text-box {
+  font-size: 1.5rem;
+  color: $color-white;
+  line-height: 2;
+  margin: 2rem 0;
+  width: 80%;
+}
+.heading-secondary {
+  font-size: 3.5rem;
+  color: $color-white;
+}
+.text-box-mini {
+  font-size: 1.1rem;
+  color: $color-grey-2;
+}
+.heading-tertiary {
+  font-size: 1.4rem;
+  color: $color-grey-2;
+}

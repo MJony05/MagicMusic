@@ -1,0 +1,25 @@
+.btn {
+  background-color: inherit;
+  padding: 1rem 3rem;
+  border-radius: 20px;
+  border: 1px solid $color-white;
+  color: $color-white;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 1rem;
+  animation-name: frombottom;
+  animation-duration: 0.5s;
+  animation-delay: 1.3s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  &-premium {
+    animation-delay: 1s;
+    background-image: linear-gradient(to right, $color-tertiary, #9e32f1d5);
+    border: none;
+    padding: 1.1rem 3.1rem;
+    &:hover {
+      background-image: linear-gradient(to right, #9e32f1d5, $color-tertiary);
+    }
+  }
+}

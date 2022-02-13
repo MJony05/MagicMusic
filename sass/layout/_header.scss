@@ -1,2 +1,38 @@
 .header {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  &-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    .navbar {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      gap: 2rem;
+      .nav {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 500;
+
+        border-radius: 3rem;
+        &_login {
+          margin-left: 1rem;
+          padding: 0.5rem 2rem;
+          border: 1px solid $color-white;
+        }
+        &_signup {
+          margin-left: -1rem;
+          padding: 0.5rem 2rem;
+          border: 1px solid $color-white;
+          color: $color-black-1;
+          background-color: $color-white;
+        }
+      }
+    }
+  }
 }
