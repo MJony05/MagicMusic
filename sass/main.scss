@@ -1,13 +1,13 @@
-@use "abstracts/vars";
+@import "abstracts/vars";
 
-@use "base/reset";
-@use "base/typography";
+@import "base/reset";
+@import "base/typography";
 
-@use "components/buttons";
+@import "components/buttons";
 
-@use "layout/footer";
-@use "layout/grid";
-@use "layout/header";
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
 
-@use "pages/landing";
-@use "pages/home";
+@import "pages/landing";
+@import "pages/home";
