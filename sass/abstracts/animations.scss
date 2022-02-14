@@ -26,3 +26,15 @@
     opacity: 1;
   }
 }
+@keyframes header-ani {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+    z-index: 1000;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 1111;
+  }
+}

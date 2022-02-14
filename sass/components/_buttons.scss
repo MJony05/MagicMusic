@@ -22,4 +22,8 @@
       background-image: linear-gradient(to right, #9e32f1d5, $color-tertiary);
     }
   }
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 1.5rem 1.5rem #2dcfef13;
+  }
 }

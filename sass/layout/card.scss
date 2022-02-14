@@ -1,6 +1,6 @@
 .premium__features {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   margin-top: 4rem;
   margin-bottom: 7rem;
   &-card {
@@ -11,6 +11,14 @@
     align-items: center;
     padding: 2rem 0;
     width: 170px;
+    transition: all 0.5s ease;
+    box-shadow: 0 1.5rem 1.5rem #2dcfef0a;
+
+    &:hover {
+      box-shadow: 0 1rem 3rem #2dcfef38;
+      transform: translateY(-10px);
+    }
+
     .text-box {
       margin: 0.5rem;
     }
@@ -18,9 +26,9 @@
       margin-top: -0.5rem;
     }
     &--img {
-      padding: 1.5rem;
+      padding: 1rem;
       border-radius: 50%;
-      background-color: $color-grey-1;
+      background-color: #252727;
       img {
         width: 60px;
         height: 60px;
@@ -31,6 +39,13 @@
 .premium__card {
   border-radius: 5px;
   padding: 1.5rem 2rem;
+  transition: all 0.5s ease;
+  box-shadow: 0 1.5rem 1.5rem #2dcfef0a;
+  margin-bottom: 1rem;
+  &:hover {
+    box-shadow: 0 1rem 3rem #2dcfef38;
+    transform: translateY(-10px);
+  }
   &-value {
     font-size: 1.4rem;
     color: white;
@@ -66,7 +81,7 @@
     );
     &-content {
       padding: 1.5rem 2rem;
-      background-color: $color-black-1;
+      background-color: #252727;
       border-radius: 3px;
     }
   }

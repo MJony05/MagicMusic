@@ -82,6 +82,10 @@
   .grid2 {
     gap: 2rem;
     margin-top: 2.5rem;
+    &__left {
+      display: flex;
+      flex-direction: column;
+    }
   }
   padding-bottom: 10rem;
 }
