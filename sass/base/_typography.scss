@@ -12,6 +12,8 @@
   &-2 {
     animation-delay: 0.5s;
   }
+  position: relative;
+  z-index: 1;
 }
 .main_cost {
   margin-top: 1rem;
@@ -26,7 +28,6 @@
   font-size: 1.5rem;
   color: $color-white;
   line-height: 2;
-  margin: 2rem 0;
   width: 80%;
 }
 .heading-secondary {
@@ -40,4 +41,15 @@
 .heading-tertiary {
   font-size: 1.4rem;
   color: $color-grey-2;
+}
+.gradient-text {
+  display: inline-block;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-tertiary,
+    $color-primary
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }

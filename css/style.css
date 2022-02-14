@@ -41,7 +41,9 @@ body {
   animation-name: fromleft;
   animation-duration: 1s;
   opacity: 0;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  position: relative;
+  z-index: 1; }
   .main__heading-1 {
     animation-delay: 0.2s; }
   .main__heading-2 {
@@ -60,7 +62,6 @@ body {
   font-size: 1.5rem;
   color: #fff;
   line-height: 2;
-  margin: 2rem 0;
   width: 80%; }
 
 .heading-secondary {
@@ -74,6 +75,13 @@ body {
 .heading-tertiary {
   font-size: 1.4rem;
   color: #99999f; }
+
+.gradient-text {
+  display: inline-block;
+  background-image: linear-gradient(to right bottom, #2dceef, #9b2def);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; }
 
 .btn {
   background-color: inherit;
@@ -110,7 +118,19 @@ body {
   width: 100%;
   height: 10vh;
   position: fixed; }
+  .header::after {
+    content: " ";
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 10vh;
+    z-index: 0;
+    opacity: 999;
+    backdrop-filter: blur(5px); }
   .header-content {
+    z-index: 9999;
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -163,6 +183,37 @@ body {
         width: 60px;
         height: 60px; }
 
+.premium__card {
+  border-radius: 5px;
+  padding: 1.5rem 2rem; }
+  .premium__card-value {
+    font-size: 1.4rem;
+    color: white; }
+    .premium__card-value-span {
+      font-size: 2rem; }
+  .premium__card ul {
+    list-style: none;
+    margin-top: 4rem; }
+    .premium__card ul li {
+      color: white;
+      font-size: 1.4rem;
+      margin: 1.5rem 0;
+      display: flex;
+      align-items: center; }
+      .premium__card ul li i {
+        display: inline-block;
+        margin-right: 1rem;
+        font-size: 1.4em; }
+  .premium__card-1 {
+    border: 3px solid #fff; }
+  .premium__card-2 {
+    padding: 3px;
+    background-image: linear-gradient(to right bottom, #2dceef, #9b2def); }
+    .premium__card-2-content {
+      padding: 1.5rem 2rem;
+      background-color: #161a1a;
+      border-radius: 3px; }
+
 .main {
   background-color: #161a1a;
   width: 100%;
@@ -202,6 +253,8 @@ body {
     .flow__text-heading-img {
       width: 5rem;
       height: 5rem; }
+  .flow .text-box {
+    margin: 2rem 0; }
 
 .banner {
   width: 100%;
@@ -211,6 +264,8 @@ body {
   background-size: cover;
   display: flex;
   align-items: center; }
+  .banner .text-box {
+    margin: 2rem 0; }
 
 .find-music {
   width: 100%;
@@ -218,10 +273,16 @@ body {
   height: 100vh;
   align-items: center;
   display: flex; }
+  .find-music .text-box {
+    margin: 2rem 0; }
 
 .premium {
   display: flex;
   flex-direction: column;
   background-color: #161a1a;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 10rem; }
+  .premium .grid2 {
+    gap: 2rem;
+    margin-top: 2.5rem; }
