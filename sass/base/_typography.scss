@@ -40,6 +40,10 @@
     transform: skewY(4deg) skewX(5deg);
   }
   text-shadow: 0 0rem 3rem #2dcfef75;
+  visibility: visible;
+  animation-name: heading2;
+  animation-duration: 1s;
+  animation-delay: 100ms;
 }
 .text-box-mini {
   font-size: 1.1rem;
