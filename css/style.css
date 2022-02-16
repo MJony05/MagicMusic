@@ -229,7 +229,7 @@ body {
     height: 10vh;
     z-index: 0;
     opacity: 999;
-    backdrop-filter: blur(50px); }
+    backdrop-filter: blur(10px); }
   .header-content {
     z-index: 9999;
     position: relative;
