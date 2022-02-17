@@ -91,7 +91,7 @@
   overflow: hidden;
   z-index: 0;
   border-radius: 0.6rem;
-  &-img {
+  img {
     width: 100%;
     border-radius: 0.6rem;
     transition: all 0.3s ease-in;
@@ -124,5 +124,15 @@
   text-align: center;
   img {
     border-radius: 50%;
+  }
+}
+.card-episode {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  align-items: center;
+  gap: 2rem;
+  img {
+    width: 100%;
+    border-radius: 5px;
   }
 }

@@ -15,7 +15,7 @@
   animation-delay: 1.3s;
   opacity: 0;
   animation-fill-mode: forwards;
-
+  text-decoration: none;
   &-premium {
     animation-delay: 1s;
     background-image: linear-gradient(to right, $color-tertiary, #9e32f1d5);
