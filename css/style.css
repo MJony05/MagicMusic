@@ -267,7 +267,8 @@ body {
   visibility: visible;
   animation-delay: 0;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  z-index: 11111111; }
   @media (max-width: 600px) {
     .header {
       display: none; } }
@@ -446,16 +447,32 @@ body {
       background-color: #252727;
       border-radius: 3px; }
 
-.card-flow-img,
-.card-recent-img {
-  width: 100%;
+.card-flow,
+.card-recent {
+  overflow: hidden;
+  z-index: 0;
   border-radius: 0.6rem; }
+  .card-flow-img,
+  .card-recent-img {
+    width: 100%;
+    border-radius: 0.6rem;
+    transition: all 0.3s ease-in;
+    overflow: hidden; }
+    .card-flow-img:hover,
+    .card-recent-img:hover {
+      transform: scale(1.3); }
+
+.card-recent-text {
+  position: relative;
+  z-index: 111;
+  background-color: #161a1a; }
 
 .card-recent-text-heading {
   color: #d5d5d5;
   margin: 0.3rem 0;
   font-weight: 400;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  position: relative; }
 
 .card-recent-text-likes {
   color: #99999f;
@@ -474,9 +491,10 @@ body {
   display: flex;
   align-items: center;
   padding: 1rem;
+  border-radius: 10px 10px 0 0;
   justify-content: space-between;
   position: fixed;
-  bottom: 1rem;
+  bottom: 0rem;
   left: 50%;
   transform: translateX(-50%); }
   .player__music {
@@ -487,7 +505,8 @@ body {
     .player__music-img {
       height: 100%; }
       .player__music-img img {
-        height: 100%; }
+        height: 100%;
+        border-radius: 5px; }
     .player__music-name {
       font-size: 1.5rem;
       color: #d5d5d5;
@@ -497,12 +516,92 @@ body {
       color: #99999f; }
     .player__music-like {
       font-size: 1.5rem;
-      color: white; }
+      color: white;
+      display: flex;
+      gap: 1rem; }
     .player__music .likee {
       display: none;
       margin-right: 1rem; }
       .player__music .likee:checked ~ .player__music-like .fa-heart {
         color: red; }
+  .player__control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .player__control-top {
+      display: flex;
+      font-size: 2rem;
+      text-align: center;
+      color: white;
+      gap: 2rem; }
+      .player__control-top .fa-solid {
+        cursor: pointer; }
+        .player__control-top .fa-solid:hover {
+          color: #2d9bef; }
+      .player__control-top .fa-pause {
+        transform: scale(1.7); }
+    .player__control-minute {
+      display: flex;
+      color: #99999f;
+      align-items: center;
+      margin-top: 1rem; }
+      .player__control-minute .status {
+        display: block;
+        width: 200px;
+        height: 3px;
+        background-color: #3a3a3d;
+        margin: 0 1rem;
+        position: relative; }
+        .player__control-minute .status::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 70%;
+          background-image: linear-gradient(to right, #2d9bef, #9b2def);
+          height: 100%; }
+  .player__right {
+    display: flex;
+    align-items: center; }
+    .player__right .player__volume {
+      display: flex;
+      align-items: center;
+      gap: 1rem; }
+    .player__right .volumee {
+      display: none; }
+    .player__right .mute {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -3px;
+      width: 3.3rem;
+      height: 3px;
+      transform: rotate(-50deg);
+      background-color: #d5d5d5;
+      opacity: 0; }
+    .player__right .volumee:checked ~ .kalonka .mute {
+      opacity: 1; }
+    .player__right .kalonka {
+      position: relative; }
+    .player__right .fa-volume-high {
+      font-size: 2rem;
+      color: #d5d5d5; }
+    .player__right .volume-degree {
+      width: 80px;
+      height: 3px;
+      background-color: #3a3a3d;
+      display: inline-block;
+      position: relative; }
+      .player__right .volume-degree::after {
+        content: "";
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: #d5d5d5; }
 
 .main {
   background-color: #161a1a;

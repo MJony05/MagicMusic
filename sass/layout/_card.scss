@@ -88,17 +88,32 @@
 }
 .card-flow,
 .card-recent {
+  overflow: hidden;
+  z-index: 0;
+  border-radius: 0.6rem;
   &-img {
     width: 100%;
     border-radius: 0.6rem;
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.3);
+    }
   }
 }
 .card-recent {
+  &-text {
+    position: relative;
+    z-index: 111;
+    background-color: $color-black-1;
+  }
   &-text-heading {
     color: $color-grey-3;
     margin: 0.3rem 0;
     font-weight: 400;
     font-size: 1.3rem;
+    position: relative;
   }
   &-text-likes {
     color: $color-grey-2;
