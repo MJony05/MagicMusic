@@ -158,3 +158,31 @@
     }
   }
 }
+.header-center {
+  margin-left: -10rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  &-link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: $color-grey-2;
+  }
+  .active-page {
+    position: relative;
+    color: $color-grey-3;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 80%;
+      left: 10%;
+      bottom: -1rem;
+      height: 0.3rem;
+      background-image: linear-gradient(
+        to right,
+        $color-secondary,
+        $color-primary
+      );
+    }
+  }
+}

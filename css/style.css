@@ -380,6 +380,27 @@ body {
         border-radius: 2rem;
         padding: 0.5rem; }
 
+.header-center {
+  margin-left: -10rem;
+  display: flex;
+  align-items: center;
+  gap: 3rem; }
+  .header-center-link {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #99999f; }
+  .header-center .active-page {
+    position: relative;
+    color: #d5d5d5; }
+    .header-center .active-page::after {
+      position: absolute;
+      content: "";
+      width: 80%;
+      left: 10%;
+      bottom: -1rem;
+      height: 0.3rem;
+      background-image: linear-gradient(to right, #2d9bef, #9b2def); }
+
 .premium__features {
   display: flex;
   gap: 2rem;
@@ -693,3 +714,10 @@ body {
 .home__browse {
   padding-top: 3vh;
   padding-bottom: 3rem; }
+
+.page_genre {
+  background-color: #161a1a;
+  padding-bottom: 10vh; }
+
+.genre {
+  padding-top: 10vh; }
