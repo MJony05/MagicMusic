@@ -56,14 +56,14 @@
     font-size: 1.2rem;
     margin-top: 1rem;
   }
-  .language {
-    background-color: transparent;
-    font-size: 1.4rem;
+}
+.language {
+  background-color: transparent;
+  font-size: 1.4rem;
+  color: white;
+  border: none;
+  option {
+    background-color: black;
     color: white;
-    border: none;
-    option {
-      background-color: black;
-      color: white;
-    }
   }
 }

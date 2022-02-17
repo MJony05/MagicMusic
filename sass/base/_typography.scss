@@ -64,3 +64,32 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+.section-header-txt {
+  font-size: 2rem;
+  color: white;
+  font-weight: 500;
+  &-info {
+    font-size: 1.2rem;
+    color: $color-grey-2;
+  }
+}
+.section-header-right {
+  font-size: 2rem;
+  .setting-button {
+    text-decoration: none;
+    color: #eee;
+    .fa-angle-left {
+      color: $color-grey-1;
+      margin-right: 1rem;
+    }
+  }
+}
+.view-all {
+  font-size: 1.3rem;
+  color: $color-grey-2;
+}

@@ -86,3 +86,28 @@
     }
   }
 }
+.card-flow,
+.card-recent {
+  &-img {
+    width: 100%;
+    border-radius: 0.6rem;
+  }
+}
+.card-recent {
+  &-text-heading {
+    color: $color-grey-3;
+    margin: 0.3rem 0;
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+  &-text-likes {
+    color: $color-grey-2;
+    font-size: 1.1rem;
+  }
+}
+.square-card {
+  text-align: center;
+  img {
+    border-radius: 50%;
+  }
+}

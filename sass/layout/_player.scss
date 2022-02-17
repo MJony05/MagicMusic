@@ -1,0 +1,46 @@
+.player {
+  background-color: $color-black-2;
+  width: 95%;
+  margin: 0 auto;
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  &__music {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    height: 100%;
+    &-img {
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+    &-name {
+      font-size: 1.5rem;
+      color: $color-grey-3;
+      margin-bottom: 0.5rem;
+    }
+    &-singer {
+      font-size: 1.3rem;
+      color: $color-grey-2;
+    }
+    &-like {
+      font-size: 1.5rem;
+      color: white;
+    }
+    .likee {
+      display: none;
+      margin-right: 1rem;
+      &:checked ~ .player__music-like .fa-heart {
+        color: red;
+      }
+    }
+  }
+}
