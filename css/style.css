@@ -721,3 +721,10 @@ body {
 
 .genre {
   padding-top: 10vh; }
+
+.podcast_page {
+  background-color: #161a1a;
+  padding-bottom: 10rem; }
+
+.podcast__recently {
+  padding-top: 10vh; }
