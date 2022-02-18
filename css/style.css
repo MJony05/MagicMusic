@@ -839,4 +839,92 @@ body {
   background-image: url(../../images/BG.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  padding-bottom: 14vh; }
+
+.musics-box {
+  margin-top: 3rem; }
+
+.search-music {
+  display: flex;
+  justify-content: space-between; }
+  .search-music .search-music-input {
+    position: relative; }
+    .search-music .search-music-input .fa-magnifying-glass {
+      position: absolute;
+      font-size: 1.6rem;
+      color: #99999f;
+      top: 0.5rem;
+      right: 1rem; }
+    .search-music .search-music-input input {
+      background-color: transparent;
+      padding: 0.5rem 0rem 0.5rem 0.5rem;
+      border: none;
+      border-bottom: 1px solid #d5d5d5;
+      font-size: 1.5rem;
+      width: 160px; }
+      .search-music .search-music-input input::placeholder {
+        color: #99999f; }
+  .search-music .search-setting {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #99999f;
+    padding: 0 1rem; }
+
+.music__list-content:hover {
+  background-color: rgba(58, 58, 61, 0.5); }
+
+.currently-playing-music {
+  background-color: rgba(58, 58, 61, 0.5); }
+
+.music__list-tip,
+.music__list-content {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 0.5fr 16fr 2fr 2fr 1fr;
+  gap: 2rem;
+  margin: 0.5rem 0;
+  align-items: center; }
+  .music__list-tip-icon i,
+  .music__list-content-icon i {
+    color: #99999f;
+    font-size: 2rem; }
+  .music__list-tip-title-1,
+  .music__list-content-title-1 {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 400;
+    margin: 0.3rem 0; }
+  .music__list-tip-title-2,
+  .music__list-content-title-2 {
+    font-size: 1.3rem;
+    color: #99999f;
+    line-height: 1.5; }
+  .music__list-tip .music__list-title-top,
+  .music__list-content .music__list-title-top {
+    font-size: 1.3rem;
+    color: #99999f; }
+  .music__list-tip-progress-status,
+  .music__list-content-progress-status {
+    display: block;
+    width: 90px;
+    height: 3px;
+    background-color: #3a3a3d;
+    position: relative; }
+  .music__list-tip-progress .now-playing::after,
+  .music__list-content-progress .now-playing::after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 70%;
+    background-color: #2d9bef;
+    top: 0;
+    left: 0; }
+  .music__list-tip-upload-time, .music__list-tip-time,
+  .music__list-content-upload-time,
+  .music__list-content-time {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #99999f; }
