@@ -771,6 +771,7 @@ body {
 .rock-page {
   background-color: #161a1a;
   background-image: url(../../images/BG-rock1.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: top; }
+  background-position: top;
+  background-attachment: fixed; }
