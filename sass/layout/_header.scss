@@ -76,7 +76,7 @@
     align-items: center;
     &__img {
       margin-right: 2rem;
-      width: 100%;
+      width: 100px;
       display: inline-block;
     }
     &_link {
@@ -184,5 +184,30 @@
         $color-primary
       );
     }
+  }
+}
+.maping {
+  font-size: 1.6rem;
+  color: $color-grey-2;
+  font-weight: 400;
+  margin-left: 2rem;
+  .here {
+    color: $color-grey-3;
+  }
+}
+.page_heading {
+  display: flex;
+  align-items: flex-end;
+  .header-page {
+    color: $color-grey-3;
+    font-size: 6.4rem;
+    margin: 0;
+    margin-right: 2rem;
+    text-shadow: 0 0 1rem $color-secondary;
+  }
+  .header-center {
+    margin-left: 2rem;
+    transform: translateY(-1rem);
+    font-size: 1.6rem;
   }
 }
