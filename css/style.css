@@ -847,6 +847,7 @@ body {
   margin-top: 3rem; }
 
 .search-music {
+  margin-top: 3rem;
   display: flex;
   justify-content: space-between; }
   .search-music .search-music-input {
@@ -980,3 +981,20 @@ body {
   font-size: 1.5rem;
   color: white;
   text-align: center; }
+
+.album {
+  background-color: #161a1a;
+  background-image: url(../../images/album-BG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 14vh; }
+
+.side_album {
+  font-size: 1.4rem;
+  color: #d5d5d5; }
+
+.album__list-row {
+  display: grid;
+  grid-template-columns: 0.5fr 4fr 4fr 0.5fr 0.5fr 0.5fr;
+  margin: 1.5rem 0; }
