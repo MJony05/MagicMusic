@@ -427,6 +427,64 @@ body {
     transform: translateY(-1rem);
     font-size: 1.6rem; }
 
+.main-music {
+  padding-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .main-music-name {
+    display: flex;
+    align-items: flex-end;
+    gap: 3rem; }
+    .main-music-name .music-heading .type-section {
+      color: #d5d5d5;
+      font-size: 1.8rem; }
+    .main-music-name .music-heading .music-aftor {
+      font-size: 5rem;
+      color: white;
+      margin: 1rem 0; }
+    .main-music-name .music-heading .music-autor {
+      color: #99999f;
+      margin-bottom: 3rem;
+      font-weight: 400; }
+    .main-music-name .header-center {
+      margin: 0;
+      margin-bottom: 1.5rem; }
+  .main-music .favourite-input {
+    display: none; }
+  .main-music .music-remote {
+    text-align: right; }
+    .main-music .music-remote .comments {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      height: 100%; }
+      .main-music .music-remote .comments .btn {
+        padding: 0.5rem 4rem; }
+      .main-music .music-remote .comments .music-more,
+      .main-music .music-remote .comments .favourites {
+        display: flex;
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid #d5d5d5;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 2rem;
+        border-radius: 50%; }
+      .main-music .music-remote .comments .music-more {
+        color: #d5d5d5; }
+  .main-music .favourites {
+    color: #2d9bef; }
+  .main-music .favourite-input:checked ~ .favourites {
+    color: red; }
+
+.followers {
+  font-size: 1.6rem;
+  color: #99999f;
+  transform: translateY(6rem); }
+
 .premium__features {
   display: flex;
   gap: 2rem;
@@ -774,4 +832,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  background-attachment: fixed; }
+
+.podcast-page {
+  background-color: #161a1a;
+  background-image: url(../../images/BG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed; }

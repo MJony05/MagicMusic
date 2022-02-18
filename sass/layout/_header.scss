@@ -211,3 +211,77 @@
     font-size: 1.6rem;
   }
 }
+.main-music {
+  padding-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-name {
+    display: flex;
+    align-items: flex-end;
+    gap: 3rem;
+    .music-heading {
+      .type-section {
+        color: $color-grey-3;
+        font-size: 1.8rem;
+      }
+      .music-aftor {
+        font-size: 5rem;
+        color: white;
+        margin: 1rem 0;
+      }
+      .music-autor {
+        color: $color-grey-2;
+        margin-bottom: 3rem;
+        font-weight: 400;
+      }
+    }
+    .header-center {
+      margin: 0;
+      margin-bottom: 1.5rem;
+    }
+  }
+  .favourite-input {
+    display: none;
+  }
+  .music-remote {
+    text-align: right;
+    .comments {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      height: 100%;
+      .btn {
+        padding: 0.5rem 4rem;
+      }
+      .music-more,
+      .favourites {
+        display: flex;
+        width: 4rem;
+        height: 4rem;
+        border: 1px solid $color-grey-3;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 2rem;
+        border-radius: 50%;
+      }
+      .music-more {
+        color: $color-grey-3;
+      }
+    }
+  }
+  .favourites {
+    color: $color-secondary;
+  }
+  .favourite-input:checked ~ .favourites {
+    color: red;
+  }
+}
+.followers {
+  font-size: 1.6rem;
+  color: $color-grey-2;
+  transform: translateY(6rem);
+}
