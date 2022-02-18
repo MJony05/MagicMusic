@@ -598,6 +598,7 @@ body {
     border-radius: 5px; }
 
 .player {
+  z-index: 111111;
   background-color: #303033;
   width: 95%;
   margin: 0 auto;
@@ -928,3 +929,54 @@ body {
     text-align: center;
     font-size: 1.2rem;
     color: #99999f; }
+
+.playlist {
+  background-color: #161a1a;
+  background-image: url(../../images/playlist-BG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 14vh; }
+
+.playlist__list {
+  margin-top: 3rem; }
+
+.playlist__list-row {
+  display: grid;
+  grid-template-columns: 0.3fr 0.5fr 4fr 4fr 4fr 1fr 0.5fr 0.5fr;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0; }
+  .playlist__list-row-title {
+    font-size: 1.4rem;
+    color: #99999f; }
+
+.music-number {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #99999f; }
+
+.playlist__list-img {
+  width: 100%;
+  text-align: center; }
+
+.playlist__music-name {
+  font-size: 1.4rem;
+  color: white; }
+
+.playlist__music-artist {
+  font-size: 1.4rem;
+  color: white; }
+
+.playlist__music-album {
+  font-size: 1.4rem;
+  color: #99999f; }
+
+.playlist__music-time {
+  font-size: 1.4rem;
+  color: #99999f; }
+
+.playlist__music-like, .playlist__music-add {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center; }
