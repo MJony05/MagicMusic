@@ -164,7 +164,7 @@
   align-items: center;
   gap: 3rem;
   &-link {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-decoration: none;
     color: $color-grey-2;
   }
@@ -287,11 +287,12 @@
 }
 .podcast--title {
   position: relative;
-  &::after {
+  &::before {
     content: "+1";
     color: $color-secondary;
     position: absolute;
-    top: -0.7rem;
+    top: -1rem;
     font-size: 1.4rem;
+    right: -1.5rem;
   }
 }
