@@ -285,3 +285,13 @@
   color: $color-grey-2;
   transform: translateY(6rem);
 }
+.podcast--title {
+  position: relative;
+  &::after {
+    content: "+1";
+    color: $color-secondary;
+    position: absolute;
+    top: -0.7rem;
+    font-size: 1.4rem;
+  }
+}
