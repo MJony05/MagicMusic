@@ -94,6 +94,10 @@ body {
   margin-top: 1rem;
   font-size: 1.4rem;
   color: #fff; }
+  @media (max-width: 400px) {
+    .main_cost {
+      font-size: 2rem;
+      margin-top: 2rem; } }
 
 .blue-text {
   color: #2dceef;
@@ -104,6 +108,9 @@ body {
   color: #fff;
   line-height: 2;
   width: 80%; }
+  @media (max-width: 400px) {
+    .text-box {
+      font-size: 2.5rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -117,6 +124,9 @@ body {
   animation-delay: 100ms; }
   .heading-secondary:hover {
     transform: skewY(4deg) skewX(5deg); }
+  @media (max-width: 400px) {
+    .heading-secondary {
+      font-size: 5rem; } }
 
 .text-box-mini {
   font-size: 1.1rem;
@@ -179,6 +189,9 @@ body {
   opacity: 0;
   animation-fill-mode: forwards;
   text-decoration: none; }
+  @media (max-width: 400px) {
+    .btn {
+      padding: 2rem 3rem; } }
   .btn-premium {
     animation-delay: 1s;
     background-image: linear-gradient(to right, #2dceef, #9e32f1d5);
@@ -186,6 +199,9 @@ body {
     padding: 1.1rem 3.1rem; }
     .btn-premium:hover {
       background-image: linear-gradient(to right, #9e32f1d5, #2dceef); }
+    @media (max-width: 400px) {
+      .btn-premium {
+        padding: 2rem 3rem; } }
   .btn:hover {
     cursor: pointer;
     box-shadow: 0 1.5rem 1.5rem #2dcfef13; }
@@ -349,9 +365,6 @@ body {
   display: flex;
   align-items: center;
   z-index: 11111111; }
-  @media (max-width: 400px) {
-    .header {
-      display: none; } }
   .header::after {
     content: " ";
     width: 100%;
@@ -375,6 +388,9 @@ body {
       justify-content: right;
       align-items: center;
       gap: 2rem; }
+      @media (max-width: 400px) {
+        .header-content .navbar {
+          display: none; } }
       .header-content .navbar .nav {
         text-decoration: none;
         color: white;
@@ -846,6 +862,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     text-align: center; }
+  @media (max-width: 400px) {
+    .main .main_btns {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 60%;
+      gap: 2rem; } }
 
 .flow {
   width: 100%;

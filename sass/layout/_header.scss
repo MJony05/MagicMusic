@@ -11,9 +11,6 @@
   display: flex;
   align-items: center;
   z-index: 11111111;
-  @include phone {
-    display: none;
-  }
   // animation-fill-mode: forwards;
   &::after {
     content: " ";
@@ -42,6 +39,9 @@
     align-items: center;
     padding: 1rem 0;
     .navbar {
+      @include phone {
+        display: none;
+      }
       display: flex;
       justify-content: right;
       align-items: center;
