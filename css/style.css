@@ -58,7 +58,7 @@ html {
       font-size: 45%; } }
   @media (max-width: 400px) {
     html {
-      font-size: 50%; } }
+      font-size: 45%; } }
 
 * {
   margin: 0;
@@ -191,7 +191,8 @@ body {
   text-decoration: none; }
   @media (max-width: 400px) {
     .btn {
-      padding: 2rem 3rem; } }
+      padding: 2rem 3rem;
+      font-size: 2rem; } }
   .btn-premium {
     animation-delay: 1s;
     background-image: linear-gradient(to right, #2dceef, #9e32f1d5);

@@ -18,6 +18,7 @@
   text-decoration: none;
   @include phone {
     padding: 2rem 3rem;
+    font-size: 2rem;
   }
   &-premium {
     animation-delay: 1s;
