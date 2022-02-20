@@ -63,6 +63,10 @@
   transition: all 0.5s ease;
   box-shadow: 0 1.5rem 1.5rem #2dcfef0a;
   margin-bottom: 1rem;
+  @include phone {
+    width: 100%;
+    margin: 0 auto;
+  }
   &:hover {
     box-shadow: 0 1rem 3rem #2dcfef38;
     transform: translateY(-10px);

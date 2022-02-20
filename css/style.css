@@ -58,7 +58,7 @@ html {
       font-size: 45%; } }
   @media (max-width: 400px) {
     html {
-      font-size: 40%; } }
+      font-size: 50%; } }
 
 * {
   margin: 0;
@@ -201,7 +201,8 @@ body {
       background-image: linear-gradient(to right, #9e32f1d5, #2dceef); }
     @media (max-width: 400px) {
       .btn-premium {
-        padding: 2rem 3rem; } }
+        padding: 2rem 3rem;
+        font-size: 2rem; } }
   .btn:hover {
     cursor: pointer;
     box-shadow: 0 1.5rem 1.5rem #2dcfef13; }
@@ -645,6 +646,10 @@ body {
   transition: all 0.5s ease;
   box-shadow: 0 1.5rem 1.5rem #2dcfef0a;
   margin-bottom: 1rem; }
+  @media (max-width: 400px) {
+    .premium__card {
+      width: 100%;
+      margin: 0 auto; } }
   .premium__card:hover {
     box-shadow: 0 1rem 3rem #2dcfef38;
     transform: translateY(-10px); }
