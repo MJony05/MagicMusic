@@ -50,6 +50,15 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
+  @media (max-width: 900px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 750px) {
+    html {
+      font-size: 45%; } }
+  @media (max-width: 400px) {
+    html {
+      font-size: 40%; } }
 
 * {
   margin: 0;
@@ -73,6 +82,9 @@ body {
   position: relative;
   z-index: 1;
   text-shadow: 0 0rem 3rem #2dcfef75; }
+  @media (max-width: 400px) {
+    .main__heading {
+      font-size: 4rem; } }
   .main__heading-1 {
     animation-delay: 0.2s; }
   .main__heading-2 {
@@ -250,6 +262,10 @@ body {
     grid-template-columns: 1.3fr 1fr 1fr 1fr 3fr;
     height: 100%;
     gap: 4rem; }
+    @media (max-width: 750px) {
+      .footer_grid {
+        display: flex;
+        flex-wrap: wrap; } }
   .footer__logo {
     display: flex;
     flex-direction: column;
@@ -308,6 +324,9 @@ body {
   gap: 10rem;
   align-items: center;
   height: 100%; }
+  @media (max-width: 400px) {
+    .grid2 {
+      grid-template-columns: 1fr; } }
 
 .grid3 {
   display: grid;
@@ -330,7 +349,7 @@ body {
   display: flex;
   align-items: center;
   z-index: 11111111; }
-  @media (max-width: 600px) {
+  @media (max-width: 400px) {
     .header {
       display: none; } }
   .header::after {
@@ -557,6 +576,14 @@ body {
   gap: 2rem;
   margin-top: 4rem;
   margin-bottom: 7rem; }
+  @media (max-width: 750px) {
+    .premium__features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem; } }
+  @media (max-width: 400px) {
+    .premium__features {
+      grid-template-columns: 1fr; } }
   .premium__features-card {
     text-align: center;
     display: flex;
@@ -567,13 +594,27 @@ body {
     width: 170px;
     transition: all 0.5s ease;
     box-shadow: 0 1.5rem 1.5rem #2dcfef0a; }
+    @media (max-width: 400px) {
+      .premium__features-card {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        gap: 2rem;
+        width: 80%;
+        margin: 0 auto;
+        text-align: left; } }
     .premium__features-card:hover {
       box-shadow: 0 1rem 3rem #2dcfef38;
       transform: translateY(-10px); }
     .premium__features-card .text-box {
       margin: 0.5rem; }
+      @media (max-width: 400px) {
+        .premium__features-card .text-box {
+          font-size: 2.5rem; } }
     .premium__features-card .text-box-mini {
       margin-top: -0.5rem; }
+      @media (max-width: 400px) {
+        .premium__features-card .text-box-mini {
+          font-size: 2rem; } }
     .premium__features-card--img {
       padding: 1rem;
       border-radius: 50%;
@@ -803,7 +844,8 @@ body {
     background-image: url(../../images/landing/MB.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center; }
+    background-position: center;
+    text-align: center; }
 
 .flow {
   width: 100%;

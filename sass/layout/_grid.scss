@@ -5,6 +5,9 @@
   gap: 10rem;
   align-items: center;
   height: 100%;
+  @include phone {
+    grid-template-columns: 1fr;
+  }
 }
 .grid3 {
   display: grid;

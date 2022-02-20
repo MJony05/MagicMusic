@@ -6,6 +6,9 @@
   animation-duration: 1s;
   opacity: 0;
   animation-fill-mode: forwards;
+  @include phone {
+    font-size: 4rem;
+  }
   &-1 {
     animation-delay: 0.2s;
   }

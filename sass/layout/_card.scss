@@ -3,6 +3,14 @@
   gap: 2rem;
   margin-top: 4rem;
   margin-bottom: 7rem;
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+  @include phone {
+    grid-template-columns: 1fr;
+  }
   &-card {
     text-align: center;
     display: flex;
@@ -13,7 +21,14 @@
     width: 170px;
     transition: all 0.5s ease;
     box-shadow: 0 1.5rem 1.5rem #2dcfef0a;
-
+    @include phone {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      gap: 2rem;
+      width: 80%;
+      margin: 0 auto;
+      text-align: left;
+    }
     &:hover {
       box-shadow: 0 1rem 3rem #2dcfef38;
       transform: translateY(-10px);
@@ -21,9 +36,15 @@
 
     .text-box {
       margin: 0.5rem;
+      @include phone {
+        font-size: 2.5rem;
+      }
     }
     .text-box-mini {
       margin-top: -0.5rem;
+      @include phone {
+        font-size: 2rem;
+      }
     }
     &--img {
       padding: 1rem;
