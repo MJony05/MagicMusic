@@ -282,8 +282,8 @@ body {
     gap: 4rem; }
     @media (max-width: 750px) {
       .footer_grid {
-        display: grid;
-        grid-template-columns: 1fr; } }
+        display: flex;
+        flex-wrap: wrap; } }
   .footer__logo {
     display: flex;
     flex-direction: column;
@@ -304,7 +304,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    text-align: right; }
+    text-align: right;
+    flex-grow: 1; }
     .footer__social-links {
       display: flex;
       gap: 1rem;
