@@ -8,8 +8,8 @@
     height: 100%;
     gap: 4rem;
     @include tablet {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr;
     }
   }
   &__logo {

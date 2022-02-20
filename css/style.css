@@ -282,8 +282,8 @@ body {
     gap: 4rem; }
     @media (max-width: 750px) {
       .footer_grid {
-        display: flex;
-        flex-wrap: wrap; } }
+        display: grid;
+        grid-template-columns: 1fr; } }
   .footer__logo {
     display: flex;
     flex-direction: column;
